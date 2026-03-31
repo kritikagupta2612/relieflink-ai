@@ -1,0 +1,54 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f4f6f8;
+}
+
+header {
+  background: #d32f2f;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+#map {
+  height: 400px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+  width: 90%;
+}
+
+button {
+  background: #1976d2;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.emergency-btn {
+  background: #d32f2f;
+  font-size: 18px;
+}
+
+#aiOutput {
+  margin-top: 10px;
+  font-weight: bold;
+}

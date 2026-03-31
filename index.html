@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ReliefLink AI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+
+<header>
+  <h1>🚨 ReliefLink AI</h1>
+  <p>Connecting People to Emergency Resources Faster</p>
+</header>
+<p style="text-align:center;">
+AI-assisted platform for real-time disaster resource coordination
+</p>
+
+<div class="container">
+
+  <div id="map"></div>
+
+
+  <div class="card">
+    <h2>Add Resource</h2>
+    <form id="resourceForm">
+      <input type="text" id="type" placeholder="Type (Food, Medical, Shelter)" required />
+     <div class="location-box">
+  <input type="text" id="location" placeholder="Location" required />
+  <button type="button" onclick="getLocation()">📍</button>
+</div>
+      <input type="text" id="description" placeholder="Description" required />
+      <button type="submit">Add Resource</button>
+    </form>
+  </div>
+
+  <div class="card">
+    <button class="emergency-btn" onclick="emergency()">🚨 I NEED HELP</button>
+    <p id="aiOutput"></p>
+  </div>
+
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
